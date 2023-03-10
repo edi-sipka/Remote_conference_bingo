@@ -23,3 +23,59 @@
  flex-direction:column;
  box-shadow: 10px 10px 10px 10px rgba( 0, 0, 0, .8);
 }
+.square {
+  border: .1px solid rgba(0, 162, 255, 0.329);
+  display:flex;
+  justify-content:center;
+  color: #ffffff;
+  padding: 0.4vw;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(19, 123, 214);
+  cursor:pointer;
+  max-width: 180px;
+  height: 100px;
+  margin: 3%;
+  border-radius: 10px;
+  font-weight: 700;
+ 
+}
+
+.square-center{
+  background-color: rgb(221, 55, 55);
+  
+}
+.checked-square{
+  text-decoration: line-through;
+  color: #fcae17;
+
+}
+.bingo{
+  background: radial-gradient(circle, rgb(68, 239, 93) 0%, rgba(51, 255, 140, 0.275) 100%);
+  color: white;
+  box-shadow: 5px 5px 40px #f9ff41;
+}
+
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px #fff;
+  }
+  50% {
+    box-shadow: 0 0 20px #fff;
+  }
+  100% {
+    box-shadow: 0 0 10px #fff;
+  }
+}
+
+.bingo:hover {
+  animation: glow 1s ease-in-out infinite;
+}
+
+.end-game{
+  animation: hinge 2s ease;
+}
+.end-game:after{
+  animation: fade-out-down 2s ease;
+}
