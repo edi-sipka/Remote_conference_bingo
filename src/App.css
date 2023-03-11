@@ -1,28 +1,102 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:700');
 @import url('https://fonts.googleapis.com/css?family=Rubik');
-@import url('https://fonts.googleapis.com/css?family=Montserrat:900');
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,900i');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
-.App {
-  margin-top: -4rem;
+.app {
   position:relative;
   display:flex;
   align-items: center;
   justify-content:end;
   flex-direction:column;
-  font-size: calc(1.5vw);
  }
+	
+ .heading {
+  font-size: 4rem;
+  font-family: 'Permanent Marker', cursive;
+  background-size: 200%;
+  background-image: linear-gradient(105deg, #D16BA5, #86A8E7, #5FFBF1, #86A8E7, #D16BA5);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: text 5s linear infinite both;
+}
+
+@keyframes text {
+  from {
+    background-position: 0 0;
+  }
+  
+  to {
+    background-position: 200% 200%;
+  }
+}
 
  .main-container{
-  border: .09px solid rgba(0, 162, 255, 0.329);
-  background-color: #4ea7fa;
+   border: .09px solid rgba(0, 162, 255, 0.329);
+   background-color: #4ea7fa;
+   position:relative;
+  display:flex;
+  align-items: center;
+  justify-content:end;
+  flex-direction:column;
+  box-shadow: 10px 10px 10px 10px rgba( 0, 0, 0, .8);
+ }
+
+.topbar{
   position:relative;
- display:flex;
- align-items: center;
- justify-content:end;
- flex-direction:column;
- box-shadow: 10px 10px 10px 10px rgba( 0, 0, 0, .8);
+  text-shadow: transparent;
+  color:#8785a2;
 }
+
+.lottie {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  z-index: 9;
+}
+
+#random-figure {
+  text-align: center;
+  display: block;
+  margin: 1.5em auto;
+  padding: 1em;
+  font-size: 1rem;
+  text-decoration: none;
+  background-color: #fcae17;
+  color: #fff;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.counter{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(5, [col] 1fr);
+  grid-template-rows: repeat(5, [row] 1fr);
+  width: 100%;
+  justify-content: center;
+  align-content: center;
+  margin: 0 auto;
+  padding-top: 0.3vw;
+  padding-bottom: 0.4vw;
+}
+
+.animation{
+  width: 100%;
+}
+
 .square {
   border: .1px solid rgba(0, 162, 255, 0.329);
   display:flex;
@@ -38,24 +112,23 @@
   margin: 3%;
   border-radius: 10px;
   font-weight: 700;
- 
+  font-family: 'Ubuntu', sans-serif;
+
 }
 
 .square-center{
-  background-color: rgb(221, 55, 55);
-  
+  background-color: rgb(221, 55, 55); 
 }
 .checked-square{
   text-decoration: line-through;
   color: #fcae17;
-
 }
+
 .bingo{
   background: radial-gradient(circle, rgb(68, 239, 93) 0%, rgba(51, 255, 140, 0.275) 100%);
   color: white;
   box-shadow: 5px 5px 40px #f9ff41;
 }
-
 
 @keyframes glow {
   0% {
@@ -76,6 +149,31 @@
 .end-game{
   animation: hinge 2s ease;
 }
+
 .end-game:after{
   animation: fade-out-down 2s ease;
+}
+
+@media (max-width: 680px) {
+  .heading{
+    font-size: 3rem;
+  }
+  #random-figure{
+    padding: 0.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .heading{
+    font-size: 3rem;
+  }
+  #random-figure{
+    font-size: 0.6rem;
+  }
+  .square {
+    font-size: 0.9rem;
+    padding: 1vw;
+}
+.app{
+  height: 48rem;
+}
 }

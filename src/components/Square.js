@@ -14,11 +14,10 @@ function Square({ id, description, checked,  squareChecked, finishedGame, comple
   if (finishedGame) {
     return <div className={allSquareBoxesStyle}></div>;
   }
-
   if (id === '12') {
     return (
       <div className="square square-center">
-        <p>Remote Conference Bingo</p>
+        <p>FREE SPACE</p>
       </div>
     );
   }
