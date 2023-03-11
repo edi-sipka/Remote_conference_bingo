@@ -6,11 +6,12 @@ function Header({ scoreBingo }) {
     <div className='topbar'>
 	  <div className='heading-div'>
 	    <p className='heading'>Bingo game</p>
-	  </div>
-      
-	  <div className='counter'>
+        <div className='counter'>
 	  <a id="random-figure">BINGO Counter: {scoreBingo} </a>
 	  </div>
+	  </div>
+      
+	 
     </div>
   );
 }

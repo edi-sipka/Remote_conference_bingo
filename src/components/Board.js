@@ -4,8 +4,6 @@ import Square from './Square';
 import Header from './Header';
 import Popup from './Popup';
 import LottieAnimation from './LottieAnimation'
-import Animation from './Animation';
-
 
 const Board = ({ cards, combination }) => {
   const [square, setSquare] = useState({});
@@ -14,7 +12,6 @@ const Board = ({ cards, combination }) => {
   const [winningCombination, setWinningCombination] = useState(combination);
   const [scoreBingo, setScoreBingo] = useState(0);
   const [showAnimation, setShowAnimation] = useState(false);
-
 
   //useEffect to check win, if the length is below 4 there is no win, and if there is winning combination animation will show and it will update completedSquares and winningCombination.
   useEffect(() => {
