@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+<p align="center">
+  <h1 align="center"> Remote Conference Bingo  <img src="https://cdn-icons-png.flaticon.com/32/5525/5525062.png" alt="react version">
+ </h1>
+  
+<br>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## What is Remote Conferencing Bingo?
+Tell us why you like working remotely?
 
-In the project directory, you can run:
+Remote conferencing bingo is a simple bingo application that you can play daily with your friends. The game consists of 35 different cards of the advantages of remote work, but in the game you will have the opportunity to play 25 cards that will be displayed randomly from game to game. There's a free slot in the middle! You need to have 5 in a row, 5 in a column or 5 in a diagonal to get BINGO. 
+ 
+<br>
 
-### `npm start`
+## 🚀 Live Version <a name="live-demo"></a>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [Play Game](https://remote-bingo.pages.dev/)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<br>
 
-### `npm test`
+## 🎥 Video <a name="video"></a>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [Watch video](https://www.loom.com/share/0ea1705701a14f29aa9226cfd31943e0)
 
-### `npm run build`
+<br>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This section provides a quick start guide.
 
-### `npm run eject`
+ The application was made in [ReactJS](https://reactjs.org//), where [Tailwind](https://tailwindcss.com/) was used as a CSS framework, and packages such as [Classnames](https://www.npmjs.com/package/classnames), [Lottie](https://www.npmjs.com/package/lottie-react), [Shuffle array](https://www.npmjs.com/package/shuffle-array).
+### Prerequisites
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- [React](https://reactjs.org//): recommend using
+- [Tailwind](https://tailwindcss.com/): recommend using
+- [Class names](https://www.npmjs.com/package/classnames): recommend using
+- [Lottie React](https://www.npmjs.com/package/lottie-react): recommend using
+- [Shuffle Array](https://www.npmjs.com/package/shuffle-array): recommend using
+- [React Confetti](https://www.npmjs.com/package/react-confetti): recommend using
+  
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Installation Documentation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+To get a local copy up and running follow these simple steps:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Copy this link `https://github.com/edi-sipka/Remote_conference_bingo`.
+- Get the directory that you want to clone the repository.
+- Open the command prompt in this directory.
+- Write `git clone `https://github.com/edi-sipka/Remote_conference_bingo`.
+- Go to the repository folder in your command prompt
+- Run `npm install`
 
-## Learn More
+<br>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## Key Features
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+-  A player wins by completing a row, column, or diagonal.
+-  There's a free slot (always on) in the middle
 
-### Analyzing the Bundle Size
+-  You can have multiple bingos
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+-  The game is responsive for desktop, tablet and mobile.
 
-### Making a Progressive Web App
+-  Bingo counter in the header.
+-  Bingo animation celebration of 3.5 seconds.
+-  End game celebration with confetti animation.
+-  Randomized cards every game.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p align="center">
+  <strong>Enjoy the game!</strong> ❤️
+</p>
